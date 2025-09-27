@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Airtable Connection</title>
+</head>
+<body>
+    <h1>Test Airtable Connection</h1>
+    <button onclick="testConnection()">Test Connection</button>
+    <div id="results"></div>
+
+    <script>
+        async function testConnection() {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = 'Testing connection...';
+
+            const AIRTABLE_BASE_ID = 'appCZsfD0gZAslLwY';
+            const AIRTABLE_API_KEY = 'pateHFdCxIJVAquJj.a255ca425abd21becc30697d04e26ed1fe149af518d6b1e149695d74c7a1de29';
+
+            // Let's first get the base schema to see what tables exist
+            const schemaUrl = `https://api.airtable.com/v0/meta/bases/${AIRTABLE_BASE_ID}/tables`;
+
+            try {
+                console.log('Fetching base schema...');
+                const response = await fetch(schemaUrl, {
+                    headers: {
+                        'Authorization': `Bearer ${AIRTABLE_API_KEY}`
+                    }
+                });
+
+                console.log('Response status:', response.status);
+
+                if (response.ok) {
+                    const data = await response.json();
+                    console.log('Base schema:', data);
+
+                    resultsDiv.innerHTML = `
+                        <h2>Success! Found tables:</h2>
+                        <pre>${JSON.stringify(data, null, 2)}</pre>
+                    `;
+                } else {
+                    const errorData = await response.text();
+                    console.error('Error response:', errorData);
+                    resultsDiv.innerHTML = `
+                        <h2>Error ${response.status}:</h2>
+                        <pre>${errorData}</pre>
+                    `;
+                }
+            } catch (error) {
+                console.error('Connection error:', error);
+                resultsDiv.innerHTML = `
+                    <h2>Connection Error:</h2>
+                    <pre>${error.message}</pre>
+                `;
+            }
+        }
+    </script>
+</body>
+</html>

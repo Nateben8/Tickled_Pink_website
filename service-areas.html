@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Areas - Tickled Pink Transitions</title>
+    <meta name="description" content="Tickled Pink Transitions serves Los Angeles County and surrounding areas. Find out if we service your city for moving, downsizing, and organization needs.">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/TickledPinkfavicon.png">
+
+    <style>
+        :root {
+            --pink-primary: #e58c95;
+            --pink-secondary: #f0a8b1;
+            --pink-light: #f7dde0;
+            --pink-extra-light: #fbf0f1;
+            --sage-primary: #7aa2a9;
+            --sage-secondary: #91b5bb;
+            --sage-light: #d9e7e9;
+            --sage-extra-light: #f0f7f8;
+            --white: #ffffff;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-300: #d1d5db;
+            --gray-400: #9ca3af;
+            --gray-500: #6b7280;
+            --gray-600: #4b5563;
+            --gray-700: #374151;
+            --gray-800: #1f2937;
+            --gray-900: #111827;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--gray-700);
+            background-color: var(--white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header - Same as other pages */
+        .header {
+            background: var(--white);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: block;
+        }
+
+        .logo-image {
+            height: 80px;
+            width: auto;
+            max-width: 350px;
+            object-fit: contain;
+            display: block;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .nav-link {
+            font-family: 'Inter', sans-serif;
+            text-decoration: none;
+            color: var(--gray-600);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+            letter-spacing: -0.01em;
+            font-size: 15px;
+        }
+
+        .nav-link:hover {
+            color: var(--pink-primary);
+        }
+
+        .nav-link.active {
+            color: var(--pink-primary);
+        }
+
+        .btn {
+            font-family: 'Inter', sans-serif;
+            padding: 14px 28px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            border: none;
+            letter-spacing: -0.01em;
+            font-size: 15px;
+        }
+
+        .btn-primary {
+            background: var(--pink-primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--pink-secondary);
+            transform: translateY(-2px);
+        }
+
+        .phone-number {
+            font-family: 'Inter', sans-serif;
+            color: var(--gray-600);
+            font-weight: 600;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            letter-spacing: -0.01em;
+            font-size: 15px;
+        }
+
+        .phone-number:hover {
+            color: var(--pink-primary);
+        }
+
+        .phone-number .icon {
+            width: 16px;
+            height: 16px;
+        }
+
+        .nav-cta {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            color: var(--gray-600);
+        }
+
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: var(--white);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .mobile-menu.active {
+            display: block;
+        }
+
+        .mobile-nav-menu {
+            list-style: none;
+            padding: 20px;
+        }
+
+        .mobile-nav-menu li {
+            margin-bottom: 16px;
+        }
+
+        .mobile-nav-menu .nav-link {
+            display: block;
+            padding: 12px 0;
+            font-size: 16px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--pink-primary) 0%, var(--sage-primary) 100%);
+            padding: 120px 0 100px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* Service Areas Section */
+        .areas-section {
+            padding: 100px 0;
+            background: var(--white);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 4vw, 3.5rem);
+            font-weight: 600;
+            color: var(--gray-900);
+            margin-bottom: 16px;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--gray-600);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .area-item {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--gray-100);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .area-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .area-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--gray-900);
+            margin-bottom: 8px;
+        }
+
+        .area-description {
+            color: var(--gray-600);
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+
+        .area-link {
+            color: var(--pink-primary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .area-link:hover {
+            color: var(--sage-primary);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--pink-extra-light) 0%, var(--sage-extra-light) 100%);
+            text-align: center;
+        }
+
+        .cta-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: var(--gray-900);
+            margin-bottom: 20px;
+        }
+
+        .cta-text {
+            font-size: 18px;
+            color: var(--gray-600);
+            margin-bottom: 32px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--gray-800);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo {
+            margin-bottom: 16px;
+        }
+
+        .footer-logo-image {
+            height: 100px;
+            width: auto;
+            max-width: 300px;
+            object-fit: contain;
+        }
+
+        .footer-section h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--pink-secondary);
+        }
+
+        .footer-section p,
+        .footer-section li {
+            color: var(--gray-300);
+            margin-bottom: 8px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: var(--gray-300);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--pink-secondary);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid var(--gray-700);
+            color: var(--gray-400);
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav-menu,
+            .nav-cta {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .hero {
+                padding: 80px 0 60px;
+            }
+
+            .areas-section {
+                padding: 60px 0;
+            }
+
+            .areas-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-section {
+                padding: 60px 0;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/Tickled Pink Website Image.png" alt="Tickled Pink Transitions - Professional Moving and Downsizing Services in Los Angeles County" class="logo-image">
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="service-areas.html" class="nav-link active">Service Areas</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-cta">
+                <a href="tel:+16264225749" class="phone-number">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    (626) 422-5749
+                </a>
+                <a href="contact.html" class="btn btn-primary">Get Quote</a>
+            </div>
+
+            <button class="mobile-menu-toggle">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+
+            <div class="mobile-menu">
+                <ul class="mobile-nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="service-areas.html" class="nav-link">Service Areas</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="tel:+16264225749" class="nav-link">(626) 422-5749</a></li>
+                    <li><a href="contact.html" class="btn btn-primary" style="margin-top: 16px;">Get Quote</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Service Areas</h1>
+            <p class="hero-subtitle">Proudly serving Los Angeles County and surrounding areas with professional moving, downsizing, and organization services.</p>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section class="areas-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Where We Serve</h2>
+                <p class="section-subtitle">We provide comprehensive moving and organization services throughout these areas. Don't see your city? Give us a call!</p>
+            </div>
+
+            <div class="areas-grid">
+                <div class="area-item">
+                    <h3 class="area-title">Los Angeles</h3>
+                    <p class="area-description">Full service coverage throughout LA</p>
+                    <a href="los-angeles.html" class="area-link">Learn More →</a>
+                </div>
+
+                <div class="area-item">
+                    <h3 class="area-title">Santa Monica</h3>
+                    <p class="area-description">Coastal moves and downsizing</p>
+                    <a href="santa-monica.html" class="area-link">Learn More →</a>
+                </div>
+
+                <div class="area-item">
+                    <h3 class="area-title">Beverly Hills</h3>
+                    <p class="area-description">Luxury moving and organization</p>
+                    <a href="beverly-hills.html" class="area-link">Learn More →</a>
+                </div>
+
+                <div class="area-item">
+                    <h3 class="area-title">Pasadena</h3>
+                    <p class="area-description">Historic district specialists</p>
+                    <a href="pasadena.html" class="area-link">Learn More →</a>
+                </div>
+
+                <div class="area-item">
+                    <h3 class="area-title">Burbank</h3>
+                    <p class="area-description">Media district moving services</p>
+                    <a href="burbank.html" class="area-link">Learn More →</a>
+                </div>
+
+                <div class="area-item">
+                    <h3 class="area-title">Glendale</h3>
+                    <p class="area-description">Residential and commercial moves</p>
+                    <a href="glendale.html" class="area-link">Learn More →</a>
+                </div>
+
+                <div class="area-item">
+                    <h3 class="area-title">Torrance</h3>
+                    <p class="area-description">South Bay area coverage</p>
+                    <a href="torrance.html" class="area-link">Learn More →</a>
+                </div>
+
+                <div class="area-item">
+                    <h3 class="area-title">Long Beach</h3>
+                    <p class="area-description">Port city moving specialists</p>
+                    <a href="long-beach.html" class="area-link">Learn More →</a>
+                </div>
+
+                <div class="area-item">
+                    <h3 class="area-title">Pomona</h3>
+                    <p class="area-description">Inland Empire services</p>
+                    <a href="pomona.html" class="area-link">Learn More →</a>
+                </div>
+
+                <div class="area-item">
+                    <h3 class="area-title">West Covina</h3>
+                    <p class="area-description">San Gabriel Valley coverage</p>
+                    <a href="west-covina.html" class="area-link">Learn More →</a>
+                </div>
+
+                <div class="area-item">
+                    <h3 class="area-title">Inglewood</h3>
+                    <p class="area-description">Central LA area services</p>
+                    <a href="inglewood.html" class="area-link">Learn More →</a>
+                </div>
+
+                <div class="area-item">
+                    <h3 class="area-title">Lancaster & Palmdale</h3>
+                    <p class="area-description">Antelope Valley specialists</p>
+                    <a href="lancaster.html" class="area-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Ready to Get Started?</h2>
+            <p class="cta-text">Don't see your area listed? We may still be able to help! Contact us today for a free consultation and custom quote.</p>
+            <a href="contact.html" class="btn btn-primary">Get Your Free Quote</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/Tickled Pink Website Image.png" alt="Tickled Pink Transitions Logo - Moving, Downsizing and Organization Services in LA County" class="footer-logo-image">
+                    </div>
+                    <p>Professional moving, downsizing, and organization services throughout Los Angeles County.</p>
+                    <p><strong>Phone:</strong> (626) 422-5749</p>
+                    <p><strong>Email:</strong> tickledpinktransitions@gmail.com</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li>Moving Services</li>
+                        <li>Downsizing Solutions</li>
+                        <li>Decluttering & Organizing</li>
+                        <li>Junk Removal</li>
+                        <li>Estate Cleanouts</li>
+                        <li>Trash Hauling</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Service Areas</h3>
+                    <ul>
+                        <li>Los Angeles County</li>
+                        <li>Santa Monica</li>
+                        <li>Beverly Hills</li>
+                        <li>Pasadena</li>
+                        <li>And surrounding areas</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tickled Pink Transitions. All rights reserved. Licensed, Bonded & Insured.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Free Quote - Tickled Pink Transitions</title>
+    <meta name="description" content="Get your free quote for professional moving, downsizing, and organization services in Los Angeles County. Contact Tickled Pink Transitions today.">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/TickledPinkfavicon.png">
+
+    <style>
+        :root {
+            --pink-primary: #e58c95;
+            --pink-secondary: #f0a8b1;
+            --pink-light: #f7dde0;
+            --pink-extra-light: #fbf0f1;
+            --sage-primary: #7aa2a9;
+            --sage-secondary: #91b5bb;
+            --sage-light: #d9e7e9;
+            --sage-extra-light: #f0f7f8;
+            --white: #ffffff;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-300: #d1d5db;
+            --gray-400: #9ca3af;
+            --gray-500: #6b7280;
+            --gray-600: #4b5563;
+            --gray-700: #374151;
+            --gray-800: #1f2937;
+            --gray-900: #111827;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--gray-700);
+            background-color: var(--white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: var(--white);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: block;
+        }
+
+        .logo-image {
+            height: 80px;
+            width: auto;
+            max-width: 350px;
+            object-fit: contain;
+            display: block;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .nav-link {
+            font-family: 'Inter', sans-serif;
+            text-decoration: none;
+            color: var(--gray-600);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+            letter-spacing: -0.01em;
+            font-size: 15px;
+        }
+
+        .nav-link:hover {
+            color: var(--pink-primary);
+        }
+
+        .btn {
+            font-family: 'Inter', sans-serif;
+            padding: 14px 28px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            border: none;
+            letter-spacing: -0.01em;
+            font-size: 15px;
+        }
+
+        .btn-primary {
+            background: var(--pink-primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--pink-secondary);
+            transform: translateY(-2px);
+        }
+
+        .phone-number {
+            font-family: 'Inter', sans-serif;
+            color: var(--gray-600);
+            font-weight: 600;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            letter-spacing: -0.01em;
+            font-size: 15px;
+        }
+
+        .phone-number:hover {
+            color: var(--pink-primary);
+        }
+
+        .phone-number .icon {
+            width: 16px;
+            height: 16px;
+        }
+
+        .nav-cta {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-link.active {
+            color: var(--pink-primary);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            color: var(--gray-600);
+        }
+
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: var(--white);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .mobile-menu.active {
+            display: block;
+        }
+
+        .mobile-nav-menu {
+            list-style: none;
+            padding: 20px;
+        }
+
+        .mobile-nav-menu li {
+            margin-bottom: 16px;
+        }
+
+        .mobile-nav-menu .nav-link {
+            display: block;
+            padding: 12px 0;
+            font-size: 16px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--pink-primary) 0%, var(--sage-primary) 100%);
+            padding: 120px 0 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.05"><polygon points="30 0 35 25 60 30 35 35 30 60 25 35 0 30 25 25"/></g></g></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 600;
+            color: white;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.95);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.7;
+            font-weight: 400;
+        }
+
+        /* Contact Form Section */
+        .contact-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--pink-extra-light) 0%, var(--sage-extra-light) 100%);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 4vw, 3.5rem);
+            font-weight: 600;
+            color: var(--gray-900);
+            margin-bottom: 16px;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--gray-600);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .contact-form {
+            background: var(--white);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-form::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--pink-primary), var(--sage-primary));
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 30px;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: var(--gray-800);
+            font-size: 15px;
+            letter-spacing: 0.3px;
+        }
+
+        .required {
+            color: var(--pink-primary);
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 16px 20px;
+            border: 2px solid var(--gray-200);
+            border-radius: 12px;
+            font-size: 16px;
+            font-family: 'Inter', sans-serif;
+            transition: all 0.3s ease;
+            background: var(--gray-50);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--pink-primary);
+            background: var(--white);
+            box-shadow: 0 0 0 3px rgba(229, 140, 149, 0.1);
+            transform: translateY(-1px);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 140px;
+            line-height: 1.6;
+        }
+
+        .form-group select {
+            cursor: pointer;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 18px;
+            font-size: 17px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--pink-primary), var(--sage-primary));
+            border: none;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(229, 140, 149, 0.3);
+        }
+
+        .submit-btn:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* Why Choose Us Section */
+        .why-choose-us {
+            background: var(--white);
+            padding: 100px 0;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 30px;
+            border-radius: 16px;
+            background: var(--gray-50);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-image {
+            width: 100%;
+            height: 250px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 24px;
+            position: relative;
+        }
+
+        .feature-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-item:hover .feature-image img {
+            transform: scale(1.05);
+        }
+
+        .feature-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--gray-900);
+            margin-bottom: 16px;
+        }
+
+        .feature-description {
+            color: var(--gray-600);
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        /* Testimonial Section */
+        .testimonial-section {
+            background: linear-gradient(135deg, var(--pink-extra-light) 0%, var(--sage-extra-light) 100%);
+            padding: 100px 0;
+        }
+
+        .testimonial-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .testimonial-image {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .testimonial-text blockquote {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            line-height: 1.6;
+            color: var(--gray-800);
+            font-style: italic;
+            margin: 0 0 32px 0;
+            position: relative;
+        }
+
+        .testimonial-text blockquote:before {
+            content: '"';
+            font-size: 60px;
+            color: var(--pink-primary);
+            position: absolute;
+            left: -20px;
+            top: -10px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .testimonial-author strong {
+            display: block;
+            font-size: 18px;
+            color: var(--gray-900);
+            margin-bottom: 4px;
+        }
+
+        .testimonial-author span {
+            color: var(--gray-600);
+            font-size: 14px;
+        }
+
+        /* Contact Info */
+        .contact-info {
+            background: var(--gray-50);
+            padding: 80px 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .contact-item {
+            text-align: center;
+            padding: 35px 20px;
+            background: var(--white);
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid var(--gray-100);
+        }
+
+        .contact-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--pink-primary), var(--sage-primary));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-icon:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(229, 140, 149, 0.3);
+        }
+
+        .contact-icon svg {
+            width: 24px;
+            height: 24px;
+            color: white;
+        }
+
+        .contact-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--gray-900);
+            margin-bottom: 12px;
+        }
+
+        .contact-details {
+            color: var(--gray-600);
+            line-height: 1.6;
+            font-size: 16px;
+            word-wrap: break-word;
+            word-break: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .contact-details a {
+            color: var(--pink-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .contact-details a:hover {
+            color: var(--sage-primary);
+            text-decoration: none;
+        }
+
+        .contact-details strong {
+            color: var(--gray-800);
+            font-weight: 600;
+        }
+
+        .contact-details a[href^="mailto"] {
+            display: inline-block;
+            max-width: 100%;
+            font-size: 15px;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--gray-800);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo {
+            margin-bottom: 16px;
+        }
+
+        .footer-logo-image {
+            height: 100px;
+            width: auto;
+            max-width: 300px;
+            object-fit: contain;
+        }
+
+        .footer-section h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--pink-secondary);
+        }
+
+        .footer-section p,
+        .footer-section li {
+            color: var(--gray-300);
+            margin-bottom: 8px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: var(--gray-300);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--pink-secondary);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid var(--gray-700);
+            color: var(--gray-400);
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 1200px) {
+            .contact-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu,
+            .nav-cta {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .hero {
+                padding: 80px 0 60px;
+            }
+
+            .hero-title {
+                font-size: clamp(2rem, 8vw, 3rem);
+            }
+
+            .hero-subtitle {
+                font-size: 18px;
+                padding: 0 10px;
+            }
+
+            .contact-section {
+                padding: 60px 0;
+            }
+
+            .section-title {
+                font-size: clamp(2rem, 6vw, 2.5rem);
+            }
+
+            .contact-form {
+                margin: 0 15px;
+                padding: 35px 25px;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            .form-group {
+                margin-bottom: 25px;
+            }
+
+            .why-choose-us {
+                padding: 60px 0;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                margin-top: 40px;
+            }
+
+            .feature-item {
+                padding: 25px 20px;
+            }
+
+            .feature-image {
+                height: 200px;
+                margin-bottom: 20px;
+            }
+
+            .testimonial-section {
+                padding: 60px 0;
+            }
+
+            .testimonial-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .testimonial-image img {
+                height: 300px;
+            }
+
+            .testimonial-text blockquote {
+                font-size: 20px;
+            }
+
+            .testimonial-text blockquote:before {
+                font-size: 50px;
+                left: -15px;
+                top: -5px;
+            }
+
+            .contact-info {
+                padding: 60px 0;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .contact-item {
+                padding: 30px 20px;
+            }
+
+            .contact-details a[href^="mailto"] {
+                font-size: 14px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 60px 0 40px;
+            }
+
+            .contact-form {
+                margin: 0 10px;
+                padding: 25px 20px;
+            }
+
+            .form-group input,
+            .form-group textarea,
+            .form-group select {
+                padding: 14px 16px;
+            }
+
+            .submit-btn {
+                padding: 16px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/Tickled Pink Website Image.png" alt="Tickled Pink Transitions - Professional Moving and Downsizing Services in Los Angeles County" class="logo-image">
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="service-areas.html" class="nav-link">Service Areas</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+
+            <div class="nav-cta">
+                <a href="tel:+16264225749" class="phone-number">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    (626) 422-5749
+                </a>
+                <a href="contact.html" class="btn btn-primary">Get Quote</a>
+            </div>
+
+            <button class="mobile-menu-toggle">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+
+            <div class="mobile-menu">
+                <ul class="mobile-nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="service-areas.html" class="nav-link">Service Areas</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="tel:+16264225749" class="nav-link">(626) 422-5749</a></li>
+                    <li><a href="contact.html" class="btn btn-primary" style="margin-top: 16px;">Get Quote</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Get Your Free Quote</h1>
+                <p class="hero-subtitle">Ready to make your transition stress-free? Fill out the form below and we'll get back to you within 24 hours with a personalized quote tailored to your needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tell Us About Your Project</h2>
+                <p class="section-subtitle">Fill out this quick form and we'll provide you with a detailed, no-obligation quote within 24 hours.</p>
+            </div>
+
+            <form class="contact-form" id="quoteForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="firstName">First Name <span class="required">*</span></label>
+                        <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name <span class="required">*</span></label>
+                        <input type="text" id="lastName" name="lastName" required placeholder="Enter your last name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number <span class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" required placeholder="(626) 422-5749">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Needed</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service</option>
+                            <option value="Moving Services">Moving Services</option>
+                            <option value="Downsizing Solutions">Downsizing Solutions</option>
+                            <option value="Decluttering & Organizing">Decluttering & Organizing</option>
+                            <option value="Junk Removal">Junk Removal</option>
+                            <option value="Estate Cleanouts">Estate Cleanouts</option>
+                            <option value="Trash Hauling">Trash Hauling</option>
+                            <option value="Multiple Services">Multiple Services</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="timeline">Timeline</label>
+                        <select id="timeline" name="timeline">
+                            <option value="">When do you need this service?</option>
+                            <option value="As soon as possible">As soon as possible</option>
+                            <option value="Within 1-2 weeks">Within 1-2 weeks</option>
+                            <option value="Within 1 month">Within 1 month</option>
+                            <option value="2-3 months">2-3 months</option>
+                            <option value="Flexible timeline">Flexible timeline</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget">Budget Range</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select your budget range</option>
+                            <option value="Under $1,000">Under $1,000</option>
+                            <option value="$1,000 - $2,500">$1,000 - $2,500</option>
+                            <option value="$2,500 - $5,000">$2,500 - $5,000</option>
+                            <option value="$5,000+">$5,000+</option>
+                            <option value="Not sure">Not sure</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Service Address/Location</label>
+                        <input type="text" id="address" name="address" placeholder="City or specific address where service is needed">
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="message">Project Details</label>
+                    <textarea id="message" name="message" placeholder="Please describe your project, timeline, and any specific needs. Include details like home size, special requirements, or preferred dates..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Get My Free Quote</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Tickled Pink Transitions?</h2>
+                <p class="section-subtitle">Professional, compassionate, and trusted by hundreds of families across Los Angeles County.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-image">
+                        <img src="images/MoverswearingTickled Pink Shirts/instagram_image_row56_3_1758502187697.jpg" alt="Professional Tickled Pink moving team" loading="lazy">
+                    </div>
+                    <h3 class="feature-title">Professional Team</h3>
+                    <p class="feature-description">Licensed, bonded, and insured professionals who treat your belongings with the utmost care.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-image">
+                        <img src="images/Finished Moving in and organization result pics/instagram_image_row36_1_1758502187696.jpg" alt="Organized and clean home after service" loading="lazy">
+                    </div>
+                    <h3 class="feature-title">Stress-Free Results</h3>
+                    <p class="feature-description">We handle everything so you can focus on what matters most - your family and new beginning.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-image">
+                        <img src="images/MoverswearingTickled Pink Shirts/instagram_image_row56_1_1758502187697.jpg" alt="Tickled Pink team working together" loading="lazy">
+                    </div>
+                    <h3 class="feature-title">Personalized Service</h3>
+                    <p class="feature-description">Every project is unique. We tailor our services to meet your specific needs and timeline.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="testimonial-content">
+                <div class="testimonial-image">
+                    <img src="images/Finished Moving in and organization result pics/instagram_image_row65_1_1758502187697.jpg" alt="Beautiful organized home after Tickled Pink service" loading="lazy">
+                </div>
+                <div class="testimonial-text">
+                    <blockquote>
+                        "Tickled Pink Transitions made our downsizing process so much easier than we ever imagined. They handled everything with such care and professionalism. We couldn't be happier with our organized new home!"
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <strong>Happy Los Angeles Family</strong>
+                        <span>Verified Customer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to get started? Contact us today and let's make your transition stress-free.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </div>
+                    <h3 class="contact-title">Phone</h3>
+                    <div class="contact-details">
+                        <a href="tel:+16264225749">(626) 422-5749</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </div>
+                    <h3 class="contact-title">Email</h3>
+                    <div class="contact-details">
+                        <a href="mailto:tickledpinktransitions@gmail.com">tickledpinktransitions@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="contact-title">Service Area</h3>
+                    <div class="contact-details">
+                        Los Angeles County<br>
+                        & Surrounding Areas
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12,6 12,12 16,14"/>
+                        </svg>
+                    </div>
+                    <h3 class="contact-title">Hours</h3>
+                    <div class="contact-details">
+                        <strong>Mon - Sat:</strong> 7 AM - 7 PM<br>
+                        <strong>Sunday:</strong> By Appointment
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/Tickled Pink Website Image.png" alt="Tickled Pink Transitions Logo - Moving, Downsizing and Organization Services in LA County" class="footer-logo-image">
+                    </div>
+                    <p>Professional moving, downsizing, and organization services throughout Los Angeles County.</p>
+                    <p><strong>Phone:</strong> (626) 422-5749</p>
+                    <p><strong>Email:</strong> tickledpinktransitions@gmail.com</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li>Moving Services</li>
+                        <li>Downsizing Solutions</li>
+                        <li>Decluttering & Organizing</li>
+                        <li>Junk Removal</li>
+                        <li>Estate Cleanouts</li>
+                        <li>Trash Hauling</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Service Areas</h3>
+                    <ul>
+                        <li>Los Angeles County</li>
+                        <li>Santa Monica</li>
+                        <li>Beverly Hills</li>
+                        <li>Pasadena</li>
+                        <li>And surrounding areas</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tickled Pink Transitions. All rights reserved. Licensed, Bonded & Insured.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Airtable form handling
+        document.getElementById('quoteForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const button = this.querySelector('button[type="submit"]');
+            const originalText = button.textContent;
+            button.textContent = 'Sending...';
+            button.disabled = true;
+
+            try {
+                // Get form data
+                const formData = new FormData(this);
+                const data = Object.fromEntries(formData);
+
+                // Send to Airtable
+                await sendToAirtable(data);
+
+                // Show success message
+                alert('Thank you for your request! We\'ll get back to you within 24 hours.');
+
+                // Reset form
+                this.reset();
+            } catch (error) {
+                console.error('Error:', error);
+                alert('There was an error sending your request. Please try calling us directly at (626) 422-5749.');
+            } finally {
+                button.textContent = originalText;
+                button.disabled = false;
+            }
+        });
+
+        async function sendToAirtable(data) {
+            const AIRTABLE_BASE_ID = 'appCZsfD0gZAslLwY';
+            const AIRTABLE_TABLE_NAME = 'New Website Quote Submission';
+            const AIRTABLE_API_KEY = 'pateHFdCxIJVAquJj.a255ca425abd21becc30697d04e26ed1fe149af518d6b1e149695d74c7a1de29';
+
+            const url = `https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${encodeURIComponent(AIRTABLE_TABLE_NAME)}`;
+
+            const recordData = {
+                'First Name': data.firstName || '',
+                'Last Name': data.lastName || '',
+                'Email': data.email || '',
+                'Phone': data.phone || '',
+                'Service': data.service || '',
+                'Timeline': data.timeline || '',
+                'Budget': data.budget || '',
+                'Message': data.message || '',
+                'Submitted Date': new Date().toISOString(),
+                'Source': 'Website Form'
+            };
+
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${AIRTABLE_API_KEY}`,
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    records: [{
+                        fields: recordData
+                    }]
+                })
+            });
+
+            if (!response.ok) {
+                const errorText = await response.text();
+                console.error('Airtable error response:', errorText);
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            return await response.json();
+        }
+
+        // Mobile menu toggle
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

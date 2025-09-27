@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burbank Moving Services - Tickled Pink Transitions</title>
+    <meta name="description" content="Professional moving, downsizing, and organization services in Burbank, CA. Local experts serving Burbank residents with compassionate care since 2017.">
+    <meta name="keywords" content="Burbank movers, Burbank moving company, downsizing Burbank, professional movers Burbank, moving services Burbank CA">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Burbank Moving Services - Tickled Pink Transitions">
+    <meta property="og:description" content="Professional moving, downsizing, and organization services in Burbank, CA. Licensed, insured, and trusted by Burbank families.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://tickledpinktransitions.com/images/Tickled Pink Website Image.png">
+    <meta property="og:url" content="https://tickledpinktransitions.com/burbank.html">
+    
+    <!-- Local Business Meta Tags -->
+    <meta name="geo.region" content="US-CA">
+    <meta name="geo.placename" content="Burbank, California">
+    <meta name="geo.position" content="34.1808;-118.3090">
+    <meta name="ICBM" content="34.1808, -118.3090">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Georgia+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/TickledPinkfavicon.png">
+    <link rel="shortcut icon" type="image/png" href="images/TickledPinkfavicon.png">
+
+    <style>
+        :root {
+            --pink-primary: #e58c95;
+            --pink-secondary: #f0a8b1;
+            --pink-light: #f7dde0;
+            --pink-extra-light: #fbf0f1;
+            --sage-primary: #7aa2a9;
+            --sage-secondary: #91b5bb;
+            --sage-light: #d9e7e9;
+            --sage-extra-light: #f0f7f8;
+            --white: #ffffff;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-300: #d1d5db;
+            --gray-400: #9ca3af;
+            --gray-500: #6b7280;
+            --gray-600: #4b5563;
+            --gray-700: #374151;
+            --gray-800: #1f2937;
+            --gray-900: #111827;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.7;
+            color: var(--gray-700);
+            background-color: var(--white);
+            font-weight: 400;
+            letter-spacing: 0.01em;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header & Navigation */
+        .header {
+            background: var(--white);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--gray-800);
+        }
+
+        .logo-image {
+            height: 80px;
+            width: auto;
+            max-width: 350px;
+            object-fit: contain;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .nav-link {
+            font-family: 'Georgia Pro', Georgia, serif;
+            text-decoration: none;
+            color: var(--gray-600);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+            letter-spacing: 0.01em;
+        }
+
+        .nav-link:hover {
+            color: var(--pink-primary);
+        }
+
+        .nav-cta {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .phone-number {
+            font-family: 'Source Sans 3', sans-serif;
+            color: var(--gray-600);
+            font-weight: 600;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            letter-spacing: 0.01em;
+        }
+
+        .phone-number:hover {
+            color: var(--pink-primary);
+        }
+
+        .btn {
+            font-family: 'Source Sans 3', sans-serif;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            border: none;
+            font-size: 14px;
+            letter-spacing: 0.01em;
+        }
+
+        .btn-primary {
+            background: var(--pink-primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--pink-secondary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3);
+        }
+
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(135deg, var(--pink-extra-light) 0%, var(--sage-extra-light) 100%);
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+
+        .page-title {
+            font-family: 'Georgia Pro', Georgia, serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            color: var(--gray-800);
+            margin-bottom: 20px;
+        }
+
+        .page-subtitle {
+            font-size: 20px;
+            color: var(--gray-600);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Sections */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-family: 'Georgia Pro', Georgia, serif;
+            text-align: center;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            color: var(--gray-800);
+            margin-bottom: 16px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: var(--gray-600);
+            max-width: 600px;
+            margin: 0 auto 60px;
+        }
+
+        /* Location Features */
+        .location-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            margin-top: 60px;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 40px 32px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid var(--gray-100);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+            border-color: var(--pink-light);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--pink-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+        }
+
+        .feature-icon svg {
+            width: 30px;
+            height: 30px;
+            color: white;
+        }
+
+        .feature-title {
+            font-family: 'Georgia Pro', Georgia, serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--gray-800);
+            margin-bottom: 12px;
+        }
+
+        .feature-description {
+            color: var(--gray-600);
+            line-height: 1.7;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .service-item {
+            background: var(--gray-50);
+            padding: 24px;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .service-item:hover {
+            background: var(--pink-extra-light);
+            transform: translateY(-4px);
+        }
+
+        .service-item h4 {
+            font-family: 'Georgia Pro', Georgia, serif;
+            color: var(--gray-800);
+            margin-bottom: 8px;
+        }
+
+        /* Neighborhoods */
+        .neighborhoods {
+            background: var(--gray-50);
+        }
+
+        .neighborhoods-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-top: 40px;
+        }
+
+        .neighborhood-item {
+            background: var(--white);
+            padding: 16px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 500;
+            color: var(--gray-700);
+            transition: all 0.3s ease;
+        }
+
+        .neighborhood-item:hover {
+            background: var(--pink-light);
+            color: var(--pink-primary);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--pink-primary), var(--sage-primary));
+            color: white;
+            text-align: center;
+        }
+
+        .cta-title {
+            font-family: 'Georgia Pro', Georgia, serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .cta-subtitle {
+            font-size: 18px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-white {
+            background: white;
+            color: var(--pink-primary);
+        }
+
+        .btn-white:hover {
+            background: var(--gray-100);
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--gray-800);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-family: 'Georgia Pro', Georgia, serif;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--pink-secondary);
+        }
+
+        .footer-section p,
+        .footer-section li {
+            color: var(--gray-300);
+            margin-bottom: 8px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: var(--gray-300);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--pink-secondary);
+        }
+
+        .footer-logo-image {
+            height: 100px;
+            width: auto;
+            max-width: 300px;
+            object-fit: contain;
+            margin-bottom: 16px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid var(--gray-700);
+            color: var(--gray-400);
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav-menu,
+            .nav-cta {
+                display: none;
+            }
+
+            .page-header {
+                padding: 80px 0 60px;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .location-features {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .neighborhoods-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+    </style>
+
+    <!-- Local Business Structured Data for Burbank -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MovingCompany",
+        "name": "Tickled Pink Transitions - Burbank",
+        "image": "https://tickledpinktransitions.com/images/Tickled Pink Website Image.png",
+        "description": "Professional moving, downsizing, and organization services in Burbank, CA. Local experts serving Burbank residents with compassionate care.",
+        "url": "https://tickledpinktransitions.com/burbank.html",
+        "telephone": "+1-626-422-5749",
+        "email": "tickledpinktransitions@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Burbank",
+            "addressRegion": "CA",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "34.1808",
+            "longitude": "-118.3090"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Burbank"
+        },
+        "serviceType": [
+            "Moving Services",
+            "Downsizing Solutions", 
+            "Decluttering & Organizing",
+            "Junk Removal",
+            "Estate Cleanouts",
+            "Trash Hauling"
+        ],
+        "priceRange": "$$"
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/Tickled Pink Website Image.png" alt="Tickled Pink Transitions - Professional Moving and Downsizing Services in Los Angeles County" class="logo-image">
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="service-areas.html" class="nav-link">Service Areas</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-cta">
+                <a href="tel:+16264225749" class="phone-number">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    (626) 422-5749
+                </a>
+                <a href="contact.html" class="btn btn-primary">Get Quote</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="page-title">Burbank Moving Services</h1>
+                    <p class="page-subtitle">Professional moving, downsizing, and organization services for Burbank residents. Media district expertise with compassionate care.</p>
+                </div>
+                <div class="hero-image">
+                    <img src="images/MoverswearingTickled Pink Shirts/instagram_image_row56_3_1758502187697.jpg" alt="Professional movers wearing Tickled Pink Shirts in Burbank - experienced moving team ready to help" loading="eager">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Expertise Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us for Your Burbank Move?</h2>
+            <p class="section-subtitle">We understand the unique challenges of moving in Burbank - from media industry schedules to studio area logistics and family neighborhood needs.</p>
+
+            <div class="location-features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Media Industry Expertise</h3>
+                    <p class="feature-description">We specialize in moves for entertainment professionals, understanding flexible schedules and industry equipment needs.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9,22 9,12 15,12 15,22"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Studio Area Navigation</h3>
+                    <p class="feature-description">Expert knowledge of Burbank's studio districts and efficient routing around production schedules and traffic patterns.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Family Neighborhood Focus</h3>
+                    <p class="feature-description">Specialized care for Burbank's family-friendly communities with attention to children's items and schedule needs.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12,6 12,12 16,14"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Flexible Scheduling</h3>
+                    <p class="feature-description">Accommodating irregular entertainment industry hours and family schedules with weekend and evening availability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" style="background: var(--gray-50);">
+        <div class="container">
+            <h2 class="section-title">Our Burbank Services</h2>
+            <p class="section-subtitle">Comprehensive moving and organization services tailored for Burbank residents and entertainment professionals.</p>
+
+            <div class="services-grid">
+                <div class="service-item">
+                    <h4>Residential Moving</h4>
+                    <p>Full-service moves throughout Burbank neighborhoods and family areas</p>
+                </div>
+                <div class="service-item">
+                    <h4>Senior Downsizing</h4>
+                    <p>Compassionate downsizing services for Burbank seniors and retirees</p>
+                </div>
+                <div class="service-item">
+                    <h4>Decluttering & Organizing</h4>
+                    <p>Transform your Burbank home into an organized entertainment-ready space</p>
+                </div>
+                <div class="service-item">
+                    <h4>Junk Removal</h4>
+                    <p>Responsible disposal following Burbank city guidelines and recycling programs</p>
+                </div>
+                <div class="service-item">
+                    <h4>Estate Cleanouts</h4>
+                    <p>Sensitive estate services for Burbank families during difficult transitions</p>
+                </div>
+                <div class="service-item">
+                    <h4>Trash Hauling</h4>
+                    <p>Construction debris and large item removal throughout Burbank</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Neighborhoods Section -->
+    <section class="section neighborhoods">
+        <div class="container">
+            <h2 class="section-title">Burbank Areas We Serve</h2>
+            <p class="section-subtitle">We provide moving services throughout all Burbank neighborhoods and surrounding areas.</p>
+
+            <div class="neighborhoods-grid">
+                <div class="neighborhood-item">Magnolia Park</div>
+                <div class="neighborhood-item">Rancho District</div>
+                <div class="neighborhood-item">Media District</div>
+                <div class="neighborhood-item">Downtown Burbank</div>
+                <div class="neighborhood-item">Hillside Areas</div>
+                <div class="neighborhood-item">Airport District</div>
+                <div class="neighborhood-item">North Burbank</div>
+                <div class="neighborhood-item">South Burbank</div>
+                <div class="neighborhood-item">Chandler Boulevard</div>
+                <div class="neighborhood-item">Victory Boulevard</div>
+                <div class="neighborhood-item">Studio Area</div>
+                <div class="neighborhood-item">Verdugo Mountains</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <h2 class="cta-title">Ready for Your Burbank Move?</h2>
+            <p class="cta-subtitle">Contact us today for a free consultation and custom quote for your Burbank moving project</p>
+            
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-white">Get Free Estimate</a>
+                <a href="tel:+16264225749" class="btn btn-primary">Call (626) 422-5749</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/Tickled Pink Website Image.png" alt="Tickled Pink Transitions Logo - Moving, Downsizing and Organization Services in LA County" class="footer-logo-image">
+                    </div>
+                    <p>Professional moving, downsizing, and organization services in Burbank and throughout Los Angeles County.</p>
+                    <p><strong>Phone:</strong> (626) 422-5749</p>
+                    <p><strong>Email:</strong> tickledpinktransitions@gmail.com</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="services.html">Moving Services</a></li>
+                        <li><a href="services.html">Downsizing Solutions</a></li>
+                        <li><a href="services.html">Decluttering & Organizing</a></li>
+                        <li><a href="services.html">Junk Removal</a></li>
+                        <li><a href="services.html">Estate Cleanouts</a></li>
+                        <li><a href="services.html">Trash Hauling</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Service Areas</h3>
+                    <ul>
+                        <li>Burbank</li>
+                        <li>Beverly Hills</li>
+                        <li>Santa Monica</li>
+                        <li>Pasadena</li>
+                        <li>Los Angeles</li>
+                        <li>And surrounding areas</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html">Free Estimate</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tickled Pink Transitions. All rights reserved. Licensed, Bonded & Insured.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
